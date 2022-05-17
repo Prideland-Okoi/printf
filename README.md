@@ -1,3 +1,2 @@
-# printf
-# printf
-# printf
+Prideland Okoi is passionate about learning
+
