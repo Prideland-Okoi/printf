@@ -1,2 +1,2 @@
-Prideland Okoi is passionate about learning
+A printf task done by Prideland-okoi and Nnenna Kalu
 
