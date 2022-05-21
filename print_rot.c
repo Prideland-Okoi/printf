@@ -10,24 +10,33 @@
 
 int print_rot(va_list arguments, char *buffer, unsigned int index_buffer)
 {
-
-	int i, j;
-	char *str = va_arg(arguements, char *);
-	char *str2 = malloc(64);
-	char tor[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char alf[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char *str;
+	unsigned int i, j, k;
+	char nill[] = "(avyy)";
 
-	for (i = 0; *(str + i) != '\0'; i++)
-		for (j = 0; j < 52; j++)
-			if (str[i] == tor[j])
+	str = va_arg(arguments, char *);
+	if (str == NULL)
+	{
+		for (i = 0; nill[i]; i++)
+			index_buffer = handle_buffer(buffer, nill[i], index_buffer);
+		return (6);
+	}
+	for (i = 0; str[i]; i++)
+	{
+		for (k = j = 0; alf[j]; j++)
+		{
+			if (str[i] == alf[j])
 			{
-				*(str2 + i) = rot[j];
+				k = 1;
+				index_buffer = handle_buffer(buffer, rot[j], index_buffer);
 				break;
 			}
-			else
-				*(str2 + i) = *(str + i);
-	for (i = 0; *(str2 + i); i++)
-		buffer[index_buffer] = *(str2 + i), index_buffer += 1;
-	handle_buffer(str2);
-	return (buffer);
+		}
+		if (k == 0)
+			index_buffer = handle_buffer(buffer, str[i], index_buffer);
+	}
+	return (i);
 }
+
