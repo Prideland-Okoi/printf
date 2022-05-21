@@ -28,6 +28,6 @@ int print_rot(va_list arguments, char *buffer, unsigned int index_buffer)
 				*(str2 + i) = *(str + i);
 	for (i = 0; *(str2 + i); i++)
 		buffer[index_buffer] = *(str2 + i), index_buffer += 1;
-	free(str2);
+	handle_buffer(str2);
 	return (buffer);
 }
