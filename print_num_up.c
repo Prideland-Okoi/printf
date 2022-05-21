@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * printshort_hex - prints a short decimal in hexadecimal
+ * print_num_up - prints number in uppercase hex
  * @arguments: input string
  * @buffer: buffer pointer
  * @index_buffer: index for buffer pointer
  * Return: number of chars printed
  */
-int printshort_hex(va_list arguments, char *buffer, unsigned int index_buffer)
+int print_num_up(va_list arguments, char *buffer, unsigned int index_buffer)
 {
-	short int int_input, i, isnegative, count, first_digit;
+	int int_input, i, isnegative, count, first_digit;
 	char *hexadecimal, *binary;
 
 	int_input = va_arg(arguments, int);
@@ -23,11 +23,12 @@ int printshort_hex(va_list arguments, char *buffer, unsigned int index_buffer)
 		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
-
-	binary = malloc(sizeof(char) * (16 + 1));
-	binary = build_binary_array(binary, int_input, isnegative, 16);
-	hexadecimal = malloc(sizeof(char) * (4 + 1));
-	hexadecimal = build_hex_array(binary, hexadecimal, 0, 4);
+	index_buffer = handle_buffer(buffer, '0', index_buffer);
+	index_buffer = handle_buffer(buffer, 'X', index_buffer);
+	binary = malloc(sizeof(char) * (32 + 1));
+	binary = build_binary_array(binary, int_input, isnegative, 32);
+	hexadecimal = malloc(sizeof(char) * (8 + 1));
+	hexadecimal = build_hex_array(binary, hexadecimal, 1, 8);
 	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
 		if (hexadecimal[i] != '0' && first_digit == 0)
@@ -40,6 +41,6 @@ int printshort_hex(va_list arguments, char *buffer, unsigned int index_buffer)
 	}
 	free(binary);
 	free(hexadecimal);
-	return (count);
+	return (count + 2);
 }
 
