@@ -24,7 +24,7 @@ int print_reverse(va_list arguments, char *buffer, unsigned int index_buffer)
 	for (i = 0; str[i]; i++)
 		;
 	j = i - 1;
-	for (; j >= 0; j--)
+	for (j >= 0; j--)
 	{
 		index_buffer = handle_buffer(buffer, str[j], index_buffer);
 	}
