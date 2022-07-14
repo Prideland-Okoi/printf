@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # ALX Group Project for printf function
 
 ### Description
@@ -235,5 +236,9 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- Prideland Okoi,
+- [Prideland Okoi](twitter.com/pridemyhero),
 -  Nnenna Alie
+=======
+A printf function Task
+A collaborative work done by Nnenna Kalu and Prideland-Okoi
+>>>>>>> Stashed changes
