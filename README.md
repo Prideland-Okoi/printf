@@ -13,6 +13,7 @@ These arguments are placed using the percentage '%' operator
 ------------
 
 
+
 #### Resources
 
 ------------
@@ -235,5 +236,5 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- [Prideland Okoi](twitter.com/pridemyhero),
+- Prideland Okoi,
 -  Nnenna Alie
