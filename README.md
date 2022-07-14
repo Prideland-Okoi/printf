@@ -4,7 +4,6 @@
 
 ------------
 
-
 The printf function sends formatted output to stdout.
 A custom _printf() function for learning purpose. by - Prideland-okoi, and -  Nnenna Alie.
 - _printf() function format string is a character string, beginning and ending in its initial shift state, if any. 
