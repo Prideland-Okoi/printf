@@ -110,5 +110,5 @@ When there is no errors, `monty` returns `0`. Otherwise, returns `1`
 ## Author
 <img src="http://mein-fun.com/data/media/5/brainfuck_bean.jpg" width"400">
 
-* Prideland-Okoi: [Twitter](https://twitter.com/pridemyhero) - [GitHub](https://github.com/prideland-okoi)
+* Prideland-Okoi: [Twitter](https://twitter.com/pridemyhero) - [GitHub](https://github.com/Prideland-Okoi)
 
