@@ -235,5 +235,5 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- Prideland Okoi,
+- [Prideland Okoi](twitter.com/pridemyhero),
 -  Nnenna Alie
