@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # ALX Group Project for printf function
 
 ### Description
@@ -11,7 +12,6 @@ A custom _printf() function for learning purpose. by - Prideland-okoi, and -  Nn
 These arguments are placed using the percentage '%' operator
 
 ------------
-
 
 
 #### Resources
@@ -236,5 +236,9 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- Prideland Okoi,
+- [Prideland Okoi](twitter.com/pridemyhero),
 -  Nnenna Alie
+=======
+A printf function Task
+A collaborative work done by Nnenna Kalu and Prideland-Okoi
+>>>>>>> Stashed changes
